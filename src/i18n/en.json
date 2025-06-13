@@ -1,0 +1,14 @@
+{
+  "common": {
+    "errors": {
+      "not_found": "Not found",
+      "unauthorized": "Unauthorized",
+      "validation": "Validation error"
+    },
+    "success": {
+      "created": "Successfully created",
+      "updated": "Successfully updated",
+      "deleted": "Successfully deleted"
+    }
+  }
+} 

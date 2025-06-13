@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <style>
+    /* Add your styles here */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .content {
+      margin-bottom: 20px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 12px;
+      color: #999;
+    }
+    .button {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    .reason {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #ccc;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>{{title}}</h1>
+  </div>
+  
+  <div class="content">
+    <p>Dear {{firstName}},</p>
+    
+    <p>{{message}}</p>
+    
+    <p>We regret to inform you that your application to become a tutor has been declined at this time.</p>
+    
+    {{#if reason}}
+    <div class="reason">
+      <p><strong>Reason:</strong> {{reason}}</p>
+    </div>
+    {{/if}}
+    
+    <p>You are welcome to reapply in the future if your circumstances change. If you believe this decision was made in error or have any questions, please contact our support team.</p>
+    
+    <p>Best regards,</p>
+    <p>The {{app_name}} Team</p>
+  </div>
+  
+  <div class="footer">
+    <p>© {{app_name}}. All rights reserved.</p>
+  </div>
+</body>
+</html> 
